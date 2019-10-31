@@ -4,8 +4,7 @@ import "fmt"
 
 func main() {
 	printWelcome()
-	name := getName()
-	printGreeting(name)
+	printGreeting(getName())
 	fmt.Println("Let's go on an adventure!")
 	travel()
 }
