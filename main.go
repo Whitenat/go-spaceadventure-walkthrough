@@ -14,13 +14,6 @@ func printWelcome() {
 	fmt.Println("There are 8 planets to explore.")
 }
 
-func getName() string{
-	var name string
-	fmt.Println("What is your name?")
-    fmt.Scan(&name)
-    return name
-}
-
 func printGreeting(name string) {
 	fmt.Printf("Nice to meet you, %s. My name is Eliza, I'm an old friend of Siri.\n", name)
 }
@@ -38,20 +31,6 @@ func travel() {
 			fmt.Println("Sorry, I didn't get that.")
 		}
 	}
-}
-
-func getTravelChoice() string {
-	var choice string
-	fmt.Println("Shall I randomly choose a planet for you to visit? (Y or N)")
-	fmt.Scan(&choice)
-	return choice
-}
-
-func getPlanetName() string {
-	var name string
-	fmt.Println("Name the planet you would like to visit.")
-	fmt.Scan(&name)
-	return name
 }
 
 func responseToPrompt(prompt string) string{
