@@ -25,8 +25,7 @@ func travel() {
 		if choice == "Y" {
 			travelToRandomPlanet()
 		} else if choice == "N" {
-			planetName := responseToPrompt("Name the planet you would like to visit.")
-			travelToPlanet(planetName)
+			travelToPlanet(responseToPrompt("Name the planet you would like to visit."))
 		} else {
 			fmt.Println("Sorry, I didn't get that.")
 		}
